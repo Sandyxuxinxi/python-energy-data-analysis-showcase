@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>ElectricityDemandForecast.html</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <h1>Electricity Demand Forecast Tool</h1>
+    <form>
+        <fieldset>
+            <legend>Site Name</legend>
+            <p>
+                <label>Select Site</label>
+                <select id="siteName">
+                    <option value="1">Loading..</option>
+                </select>
+            </p>
+        </fieldset>
+    </form>
+
+    <div id="chart-div" style="position: relative; height:30vh; width:80vw">
+        <canvas id="prediction-chart"></canvas>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+        integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"
+        integrity="sha256-TQq84xX6vkwR0Qs1qH5ADkP+MvH0W+9E7TdHJsoIQiM=" crossorigin="anonymous"></script>
+    <script src="js/data.js"></script>
+    <script src="js/render-chart.js"></script>
+</body>
+
+</html>
